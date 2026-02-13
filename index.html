@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Singh | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Shivam Singh — ECE (VLSI) student at NIT Patna. Skilled in C, C++, HTML, CSS, JS, and AI.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Animated Background Particles -->
+    <canvas id="particlesCanvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header id="header">
+        <nav class="navbar container">
+            <a href="#" class="logo" aria-label="Home">
+                <span class="logo-text">S</span><span class="logo-accent">.</span>
+            </a>
+
+            <!-- Hamburger Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-list" id="navList">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <div class="hero-badge" data-animate="fade-up" data-delay="0">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-name" data-animate="fade-up" data-delay="1">
+                    Hi, I'm <span class="gradient-text">Shivam Singh</span>
+                </h1>
+                <div class="typewriter-wrapper" data-animate="fade-up" data-delay="2">
+                    <span class="typewriter-prefix">I'm a </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-description" data-animate="fade-up" data-delay="3">
+                    Electronics &amp; Communication Engineering (VLSI) student at
+                    <strong>NIT Patna</strong>, passionate about building impactful software
+                    and exploring the frontiers of Artificial Intelligence.
+                </p>
+                <div class="hero-cta" data-animate="fade-up" data-delay="4">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get in Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn btn-ghost">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+                <div class="hero-socials" data-animate="fade-up" data-delay="5">
+                    <a href="https://github.com/shivamsing071-cloud" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shivam-singh-b3b5a6374/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:shivamsing071@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Animated Hero Visual -->
+            <div class="hero-visual" data-animate="fade-left" data-delay="2">
+                <div class="orbit-container">
+                    <div class="orbit-ring orbit-ring-1"></div>
+                    <div class="orbit-ring orbit-ring-2"></div>
+                    <div class="orbit-ring orbit-ring-3"></div>
+                    <div class="orbit-core">
+                        <span>SS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text" data-animate="fade-right" data-delay="1">
+                    <p>
+                        I am a dedicated student currently pursuing my <strong>B.Tech</strong> in
+                        <strong>Electronics and Communication Engineering (VLSI)</strong> at the
+                        <strong>National Institute of Technology Patna</strong>. My passion lies
+                        at the intersection of hardware design and software development.
+                    </p>
+                    <p>
+                        I have a strong foundation in programming and web development, and I'm
+                        continuously exploring new technologies, especially in the field of
+                        <strong>Artificial Intelligence</strong>. I believe in writing clean,
+                        efficient code and creating solutions that make a real difference.
+                    </p>
+                </div>
+
+                <div class="about-cards" data-animate="fade-left" data-delay="2">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-university"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">College</span>
+                            <span class="info-value">NIT Patna</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">Branch</span>
+                            <span class="info-value">ECE (VLSI)</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-id-badge"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">Roll Number</span>
+                            <span class="info-value">2512035</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">Email</span>
+                            <span class="info-value">shivamsing071@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card" data-animate="zoom-in" data-delay="0">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-c"></i>
+                    </div>
+                    <h3>C</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate="zoom-in" data-delay="1">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C++</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate="zoom-in" data-delay="2">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate="zoom-in" data-delay="3">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate="zoom-in" data-delay="4">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-animate="zoom-in" data-delay="5">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right" data-delay="1">
+                    <h3>Let's work together!</h3>
+                    <p>Whether you have a question, want to collaborate, or just say hello — my inbox is always open.
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:shivamsing071@gmail.com" class="contact-method">
+                            <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-method-label">Email</span>
+                                <span class="contact-method-value">shivamsing071@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/shivamsing071-cloud" target="_blank" rel="noopener"
+                            class="contact-method">
+                            <div class="contact-method-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <span class="contact-method-label">GitHub</span>
+                                <span class="contact-method-value">shivamsing071-cloud</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shivam-singh-b3b5a6374/" target="_blank" rel="noopener"
+                            class="contact-method">
+                            <div class="contact-method-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <span class="contact-method-label">LinkedIn</span>
+                                <span class="contact-method-value">Shivam Singh</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-cta" data-animate="fade-left" data-delay="2">
+                    <div class="cta-card">
+                        <i class="fas fa-paper-plane"></i>
+                        <h3>Drop me a message</h3>
+                        <p>Click below to send me an email directly.</p>
+                        <a href="mailto:shivamsing071@gmail.com" class="btn btn-primary btn-lg">
+                            <span>Say Hello</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    <span class="logo-text">S</span><span class="logo-accent">.</span>
+                </a>
+                <p class="footer-text">Built with ❤️ by Shivam Singh</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/shivamsing071-cloud" target="_blank" rel="noopener"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shivam-singh-b3b5a6374/" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:shivamsing071@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2024 Shivam Singh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
